@@ -1,0 +1,184 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Wed Jul 08 20:17:05 2015
+#$ MODULE contador
+#$ PINS 11 clk:1'ke'  reset:2'ke'  arriba:3'ke'  start:4'ke'  conta_1_2_:23'ke'  conta_9_3_:20'ke'  conta_1_1_:22'ke'  conta_1_0_:21'ke'  conta_9_2_:19'ke'  conta_9_1_:18'ke'  \
+#  conta_9_0_:17'ke' 
+#$ NODES 3 un1_start_2_1__n N_23 un8_start
+
+.model contador
+.inputs clk.BLIF reset.BLIF arriba.BLIF start.BLIF un1_start_2_1__n.BLIF N_23.BLIF \
+un8_start.BLIF conta_1_0_.BLIF conta_1_1_.BLIF conta_1_2_.BLIF conta_9_0_.BLIF \
+conta_9_1_.BLIF conta_9_2_.BLIF conta_9_3_.BLIF
+.outputs conta_9_2_.D conta_9_2_.C conta_9_2_.AR conta_9_3_.D conta_9_3_.C \
+conta_9_3_.AR conta_1_0_.D conta_1_0_.C conta_1_0_.AR conta_1_1_.D \
+conta_1_1_.C conta_1_1_.AR conta_1_2_.D conta_1_2_.C conta_1_2_.AR \
+conta_9_0_.D conta_9_0_.C conta_9_0_.AR conta_9_1_.D conta_9_1_.C \
+conta_9_1_.AR un1_start_2_1__n N_23 un8_start
+.names arriba.BLIF start.BLIF un1_start_2_1__n.BLIF un8_start.BLIF \
+conta_9_0_.BLIF conta_9_1_.BLIF conta_9_2_.BLIF conta_9_2_.D
+1-00-01 1
+--00011 1
+0-001-1 1
+0100000 1
+1100110 1
+-0----1 1
+1----00 0
+----010 0
+0---1-0 0
+01--001 0
+11--111 0
+-1-1--- 0
+-11---- 0
+-0----0 0
+.names arriba.BLIF start.BLIF un1_start_2_1__n.BLIF un8_start.BLIF \
+conta_9_0_.BLIF conta_9_1_.BLIF conta_9_2_.BLIF conta_9_3_.BLIF conta_9_3_.D
+---01-01 1
+0--0--11 1
+1--0-0-1 1
+---001-1 1
+01-00000 1
+11-01110 1
+-110---- 1
+-0-----1 1
+--0-1-00 0
+--0--010 0
+0-0--1-0 0
+1-0-0--0 0
+010-0001 0
+110-1111 0
+-1-1---- 0
+-0-----0 0
+.names start.BLIF un1_start_2_1__n.BLIF un8_start.BLIF conta_1_0_.BLIF \
+conta_1_1_.BLIF conta_1_2_.BLIF conta_1_0_.D
+1-100- 1
+11-00- 1
+-001-- 1
+1-10-0 1
+11-0-0 1
+0--1-- 1
+---111 1
+1-110- 0
+11-10- 0
+-000-- 0
+1-11-0 0
+11-1-0 0
+0--0-- 0
+---011 0
+.names start.BLIF un1_start_2_1__n.BLIF un8_start.BLIF conta_1_0_.BLIF \
+conta_1_1_.BLIF conta_1_2_.BLIF conta_1_1_.D
+-00-10 1
+10110- 1
+11-00- 1
+-1-110 1
+-0-010 1
+0---1- 1
+-00-0- 0
+1---11 0
+10111- 0
+11-01- 0
+-1-10- 0
+-0-00- 0
+0---0- 0
+.names start.BLIF un1_start_2_1__n.BLIF N_23.BLIF conta_1_0_.BLIF \
+conta_1_1_.BLIF conta_1_2_.BLIF conta_1_2_.D
+110-00 1
+101--0 1
+-00-01 1
+-11-01 1
+---111 1
+0----1 1
+--0-10 0
+1--011 0
+101-01 0
+110-01 0
+-11--0 0
+-00--0 0
+0----0 0
+.names start.BLIF conta_9_0_.BLIF conta_9_0_.D
+10 1
+01 1
+00 0
+11 0
+.names arriba.BLIF start.BLIF un1_start_2_1__n.BLIF un8_start.BLIF \
+conta_9_0_.BLIF conta_9_1_.BLIF conta_9_1_.D
+010000 1
+110010 1
+1-0001 1
+0-0011 1
+-0---1 1
+01--01 0
+11--11 0
+1---00 0
+0---10 0
+-1-1-- 0
+-11--- 0
+-0---0 0
+.names arriba.BLIF conta_9_0_.BLIF conta_9_1_.BLIF conta_9_2_.BLIF \
+conta_9_3_.BLIF un1_start_2_1__n
+00000 1
+---1- 0
+--1-- 0
+-1--- 0
+1---- 0
+----1 0
+.names arriba.BLIF un1_start_2_1__n.BLIF un8_start.BLIF conta_1_0_.BLIF \
+conta_1_1_.BLIF conta_9_0_.BLIF N_23
+0-11-0 1
+01-1-0 1
+--111- 1
+-1-11- 1
+1---0- 0
+-00--- 0
+---0-- 0
+----01 0
+.names arriba.BLIF conta_9_0_.BLIF conta_9_1_.BLIF conta_9_2_.BLIF \
+conta_9_3_.BLIF un8_start
+11001 1
+---1- 0
+--1-- 0
+-0--- 0
+0---- 0
+----0 0
+.names clk.BLIF conta_9_2_.C
+1 1
+0 0
+.names reset.BLIF conta_9_2_.AR
+1 1
+0 0
+.names clk.BLIF conta_9_3_.C
+1 1
+0 0
+.names reset.BLIF conta_9_3_.AR
+1 1
+0 0
+.names clk.BLIF conta_1_0_.C
+1 1
+0 0
+.names reset.BLIF conta_1_0_.AR
+1 1
+0 0
+.names clk.BLIF conta_1_1_.C
+1 1
+0 0
+.names reset.BLIF conta_1_1_.AR
+1 1
+0 0
+.names clk.BLIF conta_1_2_.C
+1 1
+0 0
+.names reset.BLIF conta_1_2_.AR
+1 1
+0 0
+.names clk.BLIF conta_9_0_.C
+1 1
+0 0
+.names reset.BLIF conta_9_0_.AR
+1 1
+0 0
+.names clk.BLIF conta_9_1_.C
+1 1
+0 0
+.names reset.BLIF conta_9_1_.AR
+1 1
+0 0
+.end

@@ -1,0 +1,17 @@
+diga[2]  i
+diga[1]  i
+diga[0]  i
+clk  i
+digb[3]  i
+digb[2]  i
+digb[1]  i
+digb[0]  i
+digo  o
+digt  o
+digout[6]  o
+digout[5]  o
+digout[4]  o
+digout[3]  o
+digout[2]  o
+digout[1]  o
+digout[0]  o

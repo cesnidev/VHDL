@@ -1,0 +1,182 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      diga(2:0)                     diga                  2          3            -1
+      Port          2      digb(3:0)                     digb                  3          4            -1
+      Port          3      digout(6:0)                   digout                  6          7            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      diga_2_                     diga[2]                       1            0            
+        Port      diga_1_                     diga[1]                       1            1            
+        Port      diga_0_                     diga[0]                       1            2            
+        Port      digb_3_                     digb[3]                       2            0            
+        Port      digb_2_                     digb[2]                       2            1            
+        Port      digb_1_                     digb[1]                       2            2            
+        Port      digb_0_                     digb[0]                       2            3            
+        Port      digout_6_                   digout[6]                       3            0            
+        Port      digout_5_                   digout[5]                       3            1            
+        Port      digout_4_                   digout[4]                       3            2            
+        Port      digout_3_                   digout[3]                       3            3            
+        Port      digout_2_                   digout[2]                       3            4            
+        Port      digout_1_                   digout[1]                       3            5            
+        Port      digout_0_                   digout[0]                       3            6            
+End
+Section Cross Reference File
+Design 'decodificador' created Sun Jun 28 23:36:27 2015
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                diga_0_                                   diga[0]
+   Inst                diga_1_                                   diga[1]
+   Inst                diga_2_                                   diga[2]
+   Inst                digb_0_                                   digb[0]
+   Inst                digb_1_                                   digb[1]
+   Inst                digb_2_                                   digb[2]
+   Inst                digb_3_                                   digb[3]
+   Inst              digout_0_                                 digout[0]
+   Inst              digout_1_                                 digout[1]
+   Inst              digout_2_                                 digout[2]
+   Inst              digout_3_                                 digout[3]
+   Inst              digout_4_                                 digout[4]
+   Inst              digout_5_                                 digout[5]
+   Inst              digout_6_                                 digout[6]
+   Inst          digout_0_3_5_                             digout_0_3[5]
+   Inst            digout_0_5_                               digout_0[5]
+   Inst          digout_0_1_6_                             digout_0_1[6]
+   Inst          digout_0_2_6_                             digout_0_2[6]
+   Inst            digout_0_6_                               digout_0[6]
+   Inst          digout_0_i_6_                             digout_0_i[6]
+   Inst          digout_0_1_0_                             digout_0_1[0]
+   Inst            digout_0_0_                               digout_0[0]
+   Inst          digout_0_1_1_                             digout_0_1[1]
+   Inst          digout_0_2_1_                             digout_0_2[1]
+   Inst            digout_0_1_                               digout_0[1]
+   Inst          digout_0_1_3_                             digout_0_1[3]
+   Inst          digout_0_2_3_                             digout_0_2[3]
+   Inst            digout_0_3_                               digout_0[3]
+   Inst          digout_0_1_4_                             digout_0_1[4]
+   Inst          digout_0_2_4_                             digout_0_2[4]
+   Inst            digout_0_4_                               digout_0[4]
+   Inst          digout_0_1_5_                             digout_0_1[5]
+   Inst          digout_0_2_5_                             digout_0_2[5]
+   Inst          digout_0_i_1_                             digout_0_i[1]
+   Inst          digout_0_i_2_                             digout_0_i[2]
+   Inst          digout_0_i_3_                             digout_0_i[3]
+   Inst          digout_0_i_4_                             digout_0_i[4]
+   Inst          digout_0_i_5_                             digout_0_i[5]
+   Inst       digout_0_o4_i_4_                          digout_0_o4_i[4]
+   Inst       digout_0_o2_i_3_                          digout_0_o2_i[3]
+   Inst          digout_0_i_0_                             digout_0_i[0]
+   Inst       digout_0_o2_i_5_                          digout_0_o2_i[5]
+   Inst         digout_0_o4_2_                            digout_0_o4[2]
+   Inst              digb_i_2_                                 digb_i[2]
+   Inst              digb_i_0_                                 digb_i[0]
+   Inst         digout_0_o2_3_                            digout_0_o2[3]
+   Inst         digout_0_o4_6_                            digout_0_o4[6]
+   Inst         digout_0_o4_1_                            digout_0_o4[1]
+   Inst         digout_0_o4_4_                            digout_0_o4[4]
+   Inst       digout_0_o4_0_6_                          digout_0_o4_0[6]
+   Inst              digb_i_1_                                 digb_i[1]
+   Inst              digb_i_3_                                 digb_i[3]
+   Inst         digout_0_o2_5_                            digout_0_o2[5]
+   Inst       digout_0_a2_0_2_                          digout_0_a2_0[2]
+   Inst       digout_0_a2_1_6_                          digout_0_a2_1[6]
+   Inst         digout_0_a2_1_                            digout_0_a2[1]
+   Inst         digout_0_a2_4_                            digout_0_a2[4]
+   Inst         digout_0_a2_6_                            digout_0_a2[6]
+   Inst              diga_i_1_                                 diga_i[1]
+   Inst       digout_0_a2_0_4_                          digout_0_a2_0[4]
+   Inst              diga_i_2_                                 diga_i[2]
+   Inst         digout_0_a2_5_                            digout_0_a2[5]
+   Inst       digout_0_a2_0_6_                          digout_0_a2_0[6]
+   Inst       digout_0_a2_0_5_                          digout_0_a2_0[5]
+   Inst       digout_0_a2_0_1_                          digout_0_a2_0[1]
+   Inst       digout_0_a2_1_5_                          digout_0_a2_1[5]
+   Inst       digout_0_a2_1_1_                          digout_0_a2_1[1]
+   Inst            digout_0_2_                               digout_0[2]
+   Inst         digout_0_a4_6_                            digout_0_a4[6]
+   Inst         digout_0_a4_5_                            digout_0_a4[5]
+   Inst       digout_0_a4_0_5_                          digout_0_a4_0[5]
+   Inst       digout_0_a4_1_5_                          digout_0_a4_1[5]
+   Inst       digout_0_a4_2_5_                          digout_0_a4_2[5]
+   Inst         digout_0_a4_4_                            digout_0_a4[4]
+   Inst       digout_0_a4_0_4_                          digout_0_a4_0[4]
+   Inst         digout_0_a4_3_                            digout_0_a4[3]
+   Inst       digout_0_a4_0_3_                          digout_0_a4_0[3]
+   Inst       digout_0_a4_1_3_                          digout_0_a4_1[3]
+   Inst         digout_0_a4_2_                            digout_0_a4[2]
+   Inst         digout_0_a4_1_                            digout_0_a4[1]
+   Inst       digout_0_a4_0_1_                          digout_0_a4_0[1]
+   Inst         digout_0_a2_2_                            digout_0_a2[2]
+   Inst              diga_i_0_                                 diga_i[0]
+   Net             digb_i_1__n                                 digb_i[1]
+   Net             digb_i_3__n                                 digb_i[3]
+   Net             digb_i_2__n                                 digb_i[2]
+   Net             digb_i_0__n                                 digb_i[0]
+   Net             diga_i_2__n                                 diga_i[2]
+   Net             diga_i_1__n                                 diga_i[1]
+   Net             diga_i_0__n                                 diga_i[0]
+   Net             diga_c_0__n                                 diga_c[0]
+   Net               diga_0__n                                   diga[0]
+   Net             diga_c_1__n                                 diga_c[1]
+   Net               diga_1__n                                   diga[1]
+   Net             diga_c_2__n                                 diga_c[2]
+   Net             digb_c_0__n                                 digb_c[0]
+   Net               digb_0__n                                   digb[0]
+   Net             digb_c_1__n                                 digb_c[1]
+   Net               digb_1__n                                   digb[1]
+   Net             digb_c_2__n                                 digb_c[2]
+   Net               digb_2__n                                   digb[2]
+   Net             digb_c_3__n                                 digb_c[3]
+   Net           digout_c_0__n                               digout_c[0]
+   Net             digout_0__n                                 digout[0]
+   Net           digout_c_1__n                               digout_c[1]
+   Net             digout_1__n                                 digout[1]
+   Net           digout_c_2__n                               digout_c[2]
+   Net             digout_2__n                                 digout[2]
+   Net           digout_c_3__n                               digout_c[3]
+   Net             digout_3__n                                 digout[3]
+   Net           digout_c_4__n                               digout_c[4]
+   Net             digout_4__n                                 digout[4]
+   Net           digout_c_5__n                               digout_c[5]
+   Net             digout_5__n                                 digout[5]
+   Net           digout_c_6__n                               digout_c[6]
+   Net         digout_c_0_0__n                             digout_c_0[0]
+   Net         digout_c_0_1__n                             digout_c_0[1]
+   Net         digout_c_0_2__n                             digout_c_0[2]
+   Net         digout_c_0_3__n                             digout_c_0[3]
+   Net         digout_c_0_4__n                             digout_c_0[4]
+   Net         digout_c_0_5__n                             digout_c_0[5]
+   Net         digout_c_0_6__n                             digout_c_0[6]
+   Net       digout_c_0_1_0__n                           digout_c_0_1[0]
+   Net       digout_c_0_1_1__n                           digout_c_0_1[1]
+   Net       digout_c_0_2_1__n                           digout_c_0_2[1]
+   Net       digout_c_0_1_3__n                           digout_c_0_1[3]
+   Net       digout_c_0_2_3__n                           digout_c_0_2[3]
+   Net       digout_c_0_1_4__n                           digout_c_0_1[4]
+   Net       digout_c_0_2_4__n                           digout_c_0_2[4]
+   Net       digout_c_0_1_5__n                           digout_c_0_1[5]
+   Net       digout_c_0_2_5__n                           digout_c_0_2[5]
+   Net       digout_c_0_3_5__n                           digout_c_0_3[5]
+   Net       digout_c_0_1_6__n                           digout_c_0_1[6]
+   Net       digout_c_0_2_6__n                           digout_c_0_2[6]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     diga_2_
+        Input     digb_3_
+        Input     clk
+        Input     diga_1_
+        Input     diga_0_
+        Input     digb_2_
+        Input     digb_1_
+        Input     digb_0_
+        Output     digout_6_
+        Output     digo
+        Output     digt
+        Output     digout_5_
+        Output     digout_4_
+        Output     digout_3_
+        Output     digout_2_
+        Output     digout_1_
+        Output     digout_0_
+End

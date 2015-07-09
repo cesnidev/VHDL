@@ -1,0 +1,140 @@
+ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design decodificador created Sun Jun 28 17:41:28 2015
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   8/7        8        1    Pin   digout_6_ 
+   1/1        1        1    Pin   digo 
+   1/1        1        1    Pin   digt 
+   6/5        7        1    Pin   digout_5_ 
+   6/5        8        1    Pin   digout_4_ 
+   8/8        8        1    Pin   digout_3_ 
+   4/5        8        1    Pin   digout_2_ 
+   6/6        8        1    Pin   digout_1_ 
+   7/7        8        1    Pin   digout_0_ 
+=========
+  47/45         Best P-Term Total: 44
+                       Total Pins: 17
+                      Total Nodes: 0
+            Average P-Term/Output: 4
+
+
+Equations:
+
+digout_6_ = (!clk & !digb_2_ & !digb_1_ & !digb_0_
+     # !diga_2_ & clk & diga_1_ & !diga_0_
+     # digb_3_ & !clk & !digb_2_ & !digb_1_
+     # !digb_3_ & !clk & digb_2_ & digb_0_
+     # !digb_3_ & !clk & digb_1_
+     # clk & !diga_1_ & diga_0_
+     # diga_2_ & clk & diga_0_
+     # diga_2_ & clk & !diga_1_);
+
+digo = (!clk);
+
+digt = (clk);
+
+digout_5_ = (!digb_3_ & !clk & digb_1_ & digb_0_
+     # !clk & !digb_2_ & !digb_1_
+     # !digb_3_ & !clk & !digb_1_ & !digb_0_
+     # !digb_3_ & !clk & !digb_2_
+     # clk & diga_0_
+     # !diga_2_ & clk);
+
+digout_4_ = (clk & !diga_1_ & !diga_0_
+     # diga_2_ & clk & diga_0_
+     # !diga_2_ & clk & diga_1_
+     # !digb_3_ & !clk & digb_2_
+     # !clk & !digb_2_ & !digb_1_
+     # !digb_3_ & !clk & digb_0_);
+
+digout_3_ = (!diga_2_ & clk & diga_1_ & !diga_0_
+     # !digb_3_ & !clk & digb_2_ & !digb_1_ & digb_0_
+     # !digb_3_ & !clk & !digb_2_ & digb_1_
+     # !clk & !digb_2_ & !digb_1_ & !digb_0_
+     # clk & !diga_1_ & diga_0_
+     # diga_2_ & clk & diga_0_
+     # diga_2_ & clk & !diga_1_
+     # !digb_3_ & !clk & digb_1_ & !digb_0_);
+
+digout_2_ = (!clk & !digb_2_ & !digb_1_ & !digb_0_
+     # !digb_3_ & !clk & digb_1_ & !digb_0_
+     # clk & !diga_1_ & diga_0_
+     # diga_2_ & clk & diga_0_);
+
+digout_1_ = (!digb_3_ & !clk & !digb_1_ & !digb_0_
+     # digb_3_ & !clk & !digb_2_ & !digb_1_
+     # !digb_3_ & !clk & digb_2_ & !digb_1_
+     # clk & diga_1_ & diga_0_
+     # diga_2_ & clk & !diga_1_
+     # !digb_3_ & !clk & digb_2_ & !digb_0_);
+
+digout_0_ = (!digb_3_ & !clk & digb_1_ & !digb_0_
+     # diga_2_ & clk & !diga_1_ & !diga_0_
+     # digb_3_ & !clk & !digb_2_ & !digb_1_
+     # !digb_3_ & !clk & digb_2_ & !digb_1_
+     # !digb_3_ & !clk & !digb_2_ & digb_1_
+     # !diga_2_ & clk & diga_0_
+     # !diga_2_ & clk & diga_1_);
+
+
+Reverse-Polarity Equations:
+
+!digout_6_ = (!digb_3_ & !clk & !digb_2_ & !digb_1_ & digb_0_
+     # !diga_2_ & clk & !diga_1_ & !diga_0_
+     # diga_2_ & clk & diga_1_ & !diga_0_
+     # !diga_2_ & clk & diga_1_ & diga_0_
+     # !clk & digb_2_ & !digb_1_ & !digb_0_
+     # digb_3_ & !clk & digb_1_
+     # digb_3_ & !clk & digb_2_);
+
+!digo = (clk);
+
+!digt = (!clk);
+
+!digout_5_ = (diga_2_ & clk & !diga_0_
+     # !clk & digb_2_ & !digb_1_ & digb_0_
+     # !clk & digb_2_ & digb_1_ & !digb_0_
+     # digb_3_ & !clk & digb_1_
+     # digb_3_ & !clk & digb_2_);
+
+!digout_4_ = (diga_2_ & clk & diga_1_ & !diga_0_
+     # !diga_2_ & clk & !diga_1_ & diga_0_
+     # !clk & !digb_2_ & digb_1_ & !digb_0_
+     # digb_3_ & !clk & digb_2_
+     # digb_3_ & !clk & digb_1_);
+
+!digout_3_ = (digb_3_ & !clk & digb_0_
+     # !diga_2_ & clk & !diga_1_ & !diga_0_
+     # diga_2_ & clk & diga_1_ & !diga_0_
+     # !diga_2_ & clk & diga_1_ & diga_0_
+     # !clk & !digb_2_ & !digb_1_ & digb_0_
+     # !clk & digb_2_ & !digb_1_ & !digb_0_
+     # digb_3_ & !clk & digb_1_
+     # !clk & digb_2_ & digb_1_ & digb_0_);
+
+!digout_2_ = (!clk & digb_2_ & !digb_1_
+     # digb_3_ & !clk & digb_1_
+     # !diga_2_ & clk & diga_1_
+     # clk & !diga_0_
+     # !clk & digb_0_);
+
+!digout_1_ = (clk & diga_1_ & !diga_0_
+     # !diga_2_ & clk & !diga_1_
+     # !clk & !digb_2_ & digb_1_
+     # digb_3_ & !clk & digb_2_
+     # !digb_3_ & !clk & !digb_2_ & digb_0_
+     # !clk & digb_1_ & digb_0_);
+
+!digout_0_ = (!diga_2_ & clk & !diga_1_ & !diga_0_
+     # !digb_3_ & !clk & !digb_2_ & !digb_1_
+     # diga_2_ & clk & diga_0_
+     # diga_2_ & clk & diga_1_
+     # digb_3_ & !clk & digb_1_
+     # digb_3_ & !clk & digb_2_
+     # !clk & digb_2_ & digb_1_ & digb_0_);
+

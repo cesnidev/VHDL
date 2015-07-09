@@ -1,0 +1,35 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic2_0\synpbase\bin\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic2_0\synpbase
+Date:        Wed Jul 08 20:24:52 2015
+Version:     I-2014.03LC 
+
+Arguments:   -product synplify_pro  -batch c:/users/andres/documents/respaldo/proyecto/contador\contador.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "C:\users\andres\documents\respaldo\proyecto\contador\contador.srr"
+
+Running contador|contador
+
+Running: Compile on contador|contador
+
+Running: Compile Process on contador|contador
+
+Running: Compile Input on contador|contador
+compiler exited with errors
+Job: "compiler" terminated with error status: 2.
+See log file: "C:\users\andres\documents\respaldo\proyecto\contador\contador.srr"
+Return Code: 2
+Run Time:0h:00m:01s
+Copied C:\users\andres\documents\respaldo\proyecto\contador\contador.srr to C:\users\andres\documents\respaldo\proyecto\contador\contador.srf
+
+exit status=2
+
+exit status=2
+

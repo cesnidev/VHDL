@@ -1,0 +1,6 @@
+$DEVICE         p22v10g    fit     gal_dig.tt3
+$PINS   17  digout_0_:17   digout_1_:18   digout_2_:19   digout_3_:20   digout_4_:21   digout_5_:22   digt:14   
+digo:15   digout_6_:23   digb_0_:7   digb_1_:6   digb_2_:5   diga_0_:3   diga_1_:2   
+clk:10   digb_3_:4   diga_2_:1   
+--------------------------------------------------------------
+

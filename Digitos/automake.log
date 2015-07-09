@@ -1,0 +1,36 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Create Fuse Map
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\fuseasm.exe gal_dig.tt3 -dev p22v10g -o gal_dig.jed -ivec NoInput.tmv -rep gal_dig.rpt -doc brief -con ptblown -for brief -err automake.err -gui'
+
+FUSEASM  Fusemap Assembler
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Note 5144: Could not open vector file NoInput.tmv
+
+Input file: 'gal_dig.tt3'
+Device: 'P22V10G'
+Building model...
+Choosing best polarities...
+Mapping equations...
+.
+51 of 132 terms used; 0 vectors loaded
+Programmer load file: 'gal_dig.jed'
+Generating report...
+Report file: 'gal_dig.rpt'
+
+FUSEASM complete.  Time: 1 second 
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\synsvf.exe -exe "C:\ispLEVER_Classic2_0\ispvmsystem/ispufw" -prj gal_dig -if gal_dig.jed -j2s -log gal_dig.svl -gui'
+
+Need not generate svf file according to the constraints, exit
+Done: completed successfully.

@@ -1,0 +1,46 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Link Design
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\Synpwrap.exe -e contador -target ispGAL -pro '
+
+Copyright (c) 1991-2010 Lattice Semiconductor Corporation,  All rights reserved.
+Version : 2.0.00.17.20.15
+
+Done sucessfully with exit code 2.
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.1
+#Hostname: ANDRES-PC
+
+#Implementation: contador
+
+$ Start of Compile
+#Wed Jul 08 20:24:52 2015
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 32-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":6:7:6:14|Top entity is set to contador.
+File C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd changed - recompiling
+VHDL syntax check successful!
+@N: CD630 :"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":6:7:6:14|Synthesizing work.contador.archicontador 
+@E: CD371 :"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":43:14:43:22|No matching overload for "+"
+@E: CD371 :"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":45:13:45:21|No matching overload for "-"
+?"+"(buffer:conta_1, 1)
+@E: CD308 :"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":43:14:43:22|Unable to evaluate expression type
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jul 08 20:24:52 2015
+
+###########################################################]
+
+Error output EDIF file c:/users/andres/documents/respaldo/proyecto/contador/contador.edi
+Error executing Synplicity VHDL/Verilog HDL Synthesizer with code 2
+
+Done: failed with exit code: 0002.

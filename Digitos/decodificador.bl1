@@ -1,0 +1,115 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Sun Jun 28 23:36:26 2015
+#$ MODULE decodificador
+#$ PINS 17 digout_2_:19'ke'  digout_1_:18'ke'  diga_2_:1'ke'  digout_0_:17'ke'  digb_3_:4'ke'  digout_6_:23'ke'  clk:10'ke'  digo digt diga_1_:2'ke'  diga_0_:3'ke'  digb_2_:5'ke'  \
+#  digb_1_:6'ke'  digb_0_:7'ke'  digout_5_:22'ke'  digout_4_:21'ke'  digout_3_:20'ke' 
+
+.model decodificador
+.inputs diga_2_.BLIF digb_3_.BLIF clk.BLIF diga_1_.BLIF diga_0_.BLIF digb_2_.BLIF \
+digb_1_.BLIF digb_0_.BLIF
+.outputs digout_6_ digo digt digout_5_ digout_4_ digout_3_ digout_2_ digout_1_ \
+digout_0_
+.names diga_2_.BLIF digb_3_.BLIF clk.BLIF diga_1_.BLIF diga_0_.BLIF \
+digb_2_.BLIF digb_1_.BLIF digb_0_.BLIF digout_6_
+--0--000 1
+1-101--- 1
+-10--00- 1
+-00--1-1 1
+-00---1- 1
+0-1-0--- 1
+0-11---- 1
+-00--001 0
+0-101--- 0
+--0--100 0
+-10---1- 0
+1-1-0--- 0
+1-11---- 0
+-10--1-- 0
+.names clk.BLIF digo
+0 1
+1 0
+.names clk.BLIF digt
+1 1
+0 0
+.names diga_2_.BLIF digb_3_.BLIF clk.BLIF diga_1_.BLIF diga_0_.BLIF \
+digb_2_.BLIF digb_1_.BLIF digb_0_.BLIF digout_5_
+--100--- 1
+-00---11 1
+--0--00- 1
+-00---00 1
+-00--0-- 1
+0-1----- 1
+1-1-1--- 0
+1-11---- 0
+--0--101 0
+--0--110 0
+-10---1- 0
+-10--1-- 0
+.names diga_2_.BLIF digb_3_.BLIF clk.BLIF diga_1_.BLIF diga_0_.BLIF \
+digb_2_.BLIF digb_1_.BLIF digb_0_.BLIF digout_4_
+-00--1-- 1
+--0--00- 1
+0-1-1--- 1
+--10---- 1
+-00----1 1
+--0--010 0
+--110--- 0
+1-11---- 0
+-10--1-- 0
+-10---1- 0
+.names diga_2_.BLIF digb_3_.BLIF clk.BLIF diga_1_.BLIF diga_0_.BLIF \
+digb_2_.BLIF digb_1_.BLIF digb_0_.BLIF digout_3_
+-00--101 1
+-00--01- 1
+1-101--- 1
+--0--000 1
+-00---10 1
+0-1-0--- 1
+0-11---- 1
+-10----1 0
+0-101--- 0
+--0--001 0
+1-1-0--- 0
+1-11---- 0
+--0--100 0
+-10---1- 0
+--0--111 0
+.names diga_2_.BLIF digb_3_.BLIF clk.BLIF diga_0_.BLIF digb_2_.BLIF \
+digb_1_.BLIF digb_0_.BLIF digout_2_
+--0-000 1
+-00--10 1
+0-10--- 1
+--0-10- 0
+-10--1- 0
+--11--- 0
+1-1---- 0
+--0---1 0
+.names diga_2_.BLIF digb_3_.BLIF clk.BLIF diga_1_.BLIF diga_0_.BLIF \
+digb_2_.BLIF digb_1_.BLIF digb_0_.BLIF digout_1_
+-00---00 1
+-10--00- 1
+-00--10- 1
+--100--- 1
+1-10---- 1
+-00--1-0 1
+0-1-1--- 0
+-00--0-1 0
+--0--01- 0
+-10--1-- 0
+--11---- 0
+--0---11 0
+.names diga_2_.BLIF digb_3_.BLIF clk.BLIF diga_1_.BLIF digb_2_.BLIF \
+digb_1_.BLIF digb_0_.BLIF digout_0_
+-00-1-0 1
+-10-00- 1
+-00-01- 1
+-00-10- 1
+1-10--- 1
+0-11--- 1
+-00-00- 0
+0-10--- 0
+1-11--- 0
+-10--1- 0
+-10-1-- 0
+--0-111 0
+.end

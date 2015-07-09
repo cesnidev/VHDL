@@ -1,0 +1,5 @@
+@W: CG296 :"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":22:0:22:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":27:9:27:13|Referenced variable start is not in sensitivity list
+@W: CL113 :"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":25:2:25:3|Feedback mux created for signal conta_9[3:0].
+@W: CL113 :"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":25:2:25:3|Feedback mux created for signal conta_1[2:0].
+

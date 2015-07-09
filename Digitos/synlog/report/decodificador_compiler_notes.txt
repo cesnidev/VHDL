@@ -1,0 +1,5 @@
+@N|Running in 32-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\andres\desktop\digitos\main.vhd":6:7:6:19|Top entity is set to decodificador.
+@N: CD630 :"C:\users\andres\desktop\digitos\main.vhd":6:7:6:19|Synthesizing work.decodificador.behavioral 
+

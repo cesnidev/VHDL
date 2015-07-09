@@ -1,0 +1,134 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      conta_1(2:0)                  conta_1                  2          3            -1
+      Port          2      conta_9(3:0)                  conta_9                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      conta_1_2_                  conta_1[2]                       1            0            
+        Port      conta_1_1_                  conta_1[1]                       1            1            
+        Port      conta_1_0_                  conta_1[0]                       1            2            
+        Port      conta_9_3_                  conta_9[3]                       2            0            
+        Port      conta_9_2_                  conta_9[2]                       2            1            
+        Port      conta_9_1_                  conta_9[1]                       2            2            
+        Port      conta_9_0_                  conta_9[0]                       2            3            
+End
+Section Cross Reference File
+Design 'contador' created Wed Jul 08 20:17:05 2015
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst             conta_1_0_                                conta_1[0]
+   Inst             conta_1_1_                                conta_1[1]
+   Inst             conta_1_2_                                conta_1[2]
+   Inst             conta_9_0_                                conta_9[0]
+   Inst             conta_9_1_                                conta_9[1]
+   Inst             conta_9_2_                                conta_9[2]
+   Inst             conta_9_3_                                conta_9[3]
+   Inst         conta_1_c_i_1_                            conta_1_c_i[1]
+   Inst     un1_conta_1_1_i_2_                        un1_conta_1_1_i[2]
+   Inst     un1_conta_1_1_i_0_                        un1_conta_1_1_i[0]
+   Inst       un1_start_2_i_1_                          un1_start_2_i[1]
+   Inst     un1_start_2_i_0_2_                        un1_start_2_i_0[2]
+   Inst      conta_9_5_f1_i_3_                         conta_9_5_f1_i[3]
+   Inst           conta_9_i_2_                              conta_9_i[2]
+   Inst           conta_9_i_1_                              conta_9_i[1]
+   Inst           conta_1_i_0_                              conta_1_i[0]
+   Inst        conta_9_5_f0_3_                           conta_9_5_f0[3]
+   Inst        conta_9_5_f1_3_                           conta_9_5_f1[3]
+   Inst         un1_start_2_2_                            un1_start_2[2]
+   Inst           conta_9_i_3_                              conta_9_i[3]
+   Inst           conta_9_i_0_                              conta_9_i[0]
+   Inst           conta_9_0_0_                              conta_9_0[0]
+   Inst         conta_9_0_1__r                            conta_9_0_1_.r
+   Inst         conta_9_0_1__m                            conta_9_0_1_.m
+   Inst         conta_9_0_1__n                            conta_9_0_1_.n
+   Inst         conta_9_0_1__p                            conta_9_0_1_.p
+   Inst         conta_9_0_2__r                            conta_9_0_2_.r
+   Inst         conta_9_0_2__m                            conta_9_0_2_.m
+   Inst         conta_9_0_2__n                            conta_9_0_2_.n
+   Inst         conta_9_0_2__p                            conta_9_0_2_.p
+   Inst         conta_9_0_3__r                            conta_9_0_3_.r
+   Inst         conta_9_0_3__m                            conta_9_0_3_.m
+   Inst         conta_9_0_3__n                            conta_9_0_3_.n
+   Inst         conta_9_0_3__p                            conta_9_0_3_.p
+   Inst         conta_1_0_0__r                            conta_1_0_0_.r
+   Inst         conta_1_0_0__m                            conta_1_0_0_.m
+   Inst         conta_1_0_0__n                            conta_1_0_0_.n
+   Inst         conta_1_0_0__p                            conta_1_0_0_.p
+   Inst         conta_1_0_1__r                            conta_1_0_1_.r
+   Inst         conta_1_0_1__m                            conta_1_0_1_.m
+   Inst         conta_1_0_1__n                            conta_1_0_1_.n
+   Inst         conta_1_0_1__p                            conta_1_0_1_.p
+   Inst         conta_1_0_2__r                            conta_1_0_2_.r
+   Inst         conta_1_0_2__m                            conta_1_0_2_.m
+   Inst         conta_1_0_2__n                            conta_1_0_2_.n
+   Inst         conta_1_0_2__p                            conta_1_0_2_.p
+   Net        un1_start_2_1__n                            un1_start_2[1]
+   Net      un1_conta_1_1_1__n                          un1_conta_1_1[1]
+   Net      un1_conta_1_1_2__n                          un1_conta_1_1[2]
+   Net          conta_9_5_1__n                              conta_9_5[1]
+   Net          conta_9_5_2__n                              conta_9_5[2]
+   Net          conta_9_5_3__n                              conta_9_5[3]
+   Net        un1_start_2_2__n                            un1_start_2[2]
+   Net      un1_conta_1_1_0__n                          un1_conta_1_1[0]
+   Net       conta_9_5_f1_3__n                           conta_9_5_f1[3]
+   Net          conta_1_i_0__n                              conta_1_i[0]
+   Net          conta_9_i_1__n                              conta_9_i[1]
+   Net          conta_9_i_2__n                              conta_9_i[2]
+   Net          conta_9_i_0__n                              conta_9_i[0]
+   Net          conta_9_i_3__n                              conta_9_i[3]
+   Net          conta_1_c_0__n                              conta_1_c[0]
+   Net            conta_1_0__n                                conta_1[0]
+   Net          conta_1_c_1__n                              conta_1_c[1]
+   Net            conta_1_1__n                                conta_1[1]
+   Net          conta_1_c_2__n                              conta_1_c[2]
+   Net          conta_9_c_0__n                              conta_9_c[0]
+   Net            conta_9_0__n                                conta_9[0]
+   Net          conta_9_c_1__n                              conta_9_c[1]
+   Net            conta_9_1__n                                conta_9[1]
+   Net          conta_9_c_2__n                              conta_9_c[2]
+   Net            conta_9_2__n                                conta_9[2]
+   Net          conta_9_c_3__n                              conta_9_c[3]
+   Net    un1_conta_1_1_i_2__n                        un1_conta_1_1_i[2]
+   Net    un1_conta_1_1_i_0__n                        un1_conta_1_1_i[0]
+   Net      un1_start_2_i_1__n                          un1_start_2_i[1]
+   Net      un1_start_2_i_2__n                          un1_start_2_i[2]
+   Net     conta_9_5_f1_0_3__n                         conta_9_5_f1_0[3]
+   Net        conta_1_c_i_1__n                            conta_1_c_i[1]
+   Net      un1_start_2_1_1__n                          un1_start_2_1[1]
+   Net      un1_start_2_2_1__n                          un1_start_2_2[1]
+   Net    un1_conta_1_1_1_2__n                        un1_conta_1_1_1[2]
+   Net    un1_conta_1_1_1_1__n                        un1_conta_1_1_1[1]
+   Net      conta_9_0_1__un3_n                          conta_9_0_1_.un3
+   Net      conta_9_0_1__un1_n                          conta_9_0_1_.un1
+   Net      conta_9_0_1__un0_n                          conta_9_0_1_.un0
+   Net      conta_9_0_2__un3_n                          conta_9_0_2_.un3
+   Net      conta_9_0_2__un1_n                          conta_9_0_2_.un1
+   Net      conta_9_0_2__un0_n                          conta_9_0_2_.un0
+   Net      conta_9_0_3__un3_n                          conta_9_0_3_.un3
+   Net      conta_9_0_3__un1_n                          conta_9_0_3_.un1
+   Net      conta_9_0_3__un0_n                          conta_9_0_3_.un0
+   Net      conta_1_0_0__un3_n                          conta_1_0_0_.un3
+   Net      conta_1_0_0__un1_n                          conta_1_0_0_.un1
+   Net      conta_1_0_0__un0_n                          conta_1_0_0_.un0
+   Net      conta_1_0_1__un3_n                          conta_1_0_1_.un3
+   Net      conta_1_0_1__un1_n                          conta_1_0_1_.un1
+   Net      conta_1_0_1__un0_n                          conta_1_0_1_.un0
+   Net      conta_1_0_2__un3_n                          conta_1_0_2_.un3
+   Net      conta_1_0_2__un1_n                          conta_1_0_2_.un1
+   Net      conta_1_0_2__un0_n                          conta_1_0_2_.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     clk
+        Input     reset
+        Input     arriba
+        Input     start
+        Output     conta_1_2_
+        Output     conta_9_3_
+        Output     conta_1_1_
+        Output     conta_1_0_
+        Output     conta_9_2_
+        Output     conta_9_1_
+        Output     conta_9_0_
+End

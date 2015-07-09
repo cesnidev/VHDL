@@ -1,0 +1,6 @@
+$DEVICE         p22v10g    fit gal_contador.tt3
+$PINS   14  un8_start:14   N_23:15   un1_start_2_1__n:16   conta_9_1_:18   conta_9_0_:17   conta_1_2_:23   conta_1_1_:22   
+conta_1_0_:21   conta_9_3_:20   conta_9_2_:19   start:4   arriba:3   reset:2   clk:1   
+
+--------------------------------------------------------------
+

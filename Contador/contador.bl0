@@ -1,0 +1,320 @@
+#$ DATE Wed Jul 08 20:17:05 2015
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE contador
+#$ PINS 11 conta_1_2_:23'ke'  conta_9_3_:20'ke'  conta_1_1_:22'ke'  clk:1'ke'  conta_1_0_:21'ke'  reset:2'ke'  conta_9_2_:19'ke'  arriba:3'ke'  conta_9_1_:18'ke'  start:4'ke'  conta_9_0_:17'ke' 
+#$ NODES 109 un12_start un1_start_2_1__n N_22 N_24 N_34 N_35 N_36 N_37 N_38 N_39 \
+#  N_42 N_59 N_58 N_57 un1_conta_1_1_1__n un1_conta_1_1_2__n conta_9_5_1__n conta_9_5_2__n conta_9_5_3__n un1_start_5 \
+#  un1_conta_1_2 un1_start_4 N_15 N_16 un1_start_2_2__n N_23 N_41 un1_conta_1_1_0__n un16_start_1 un8_start \
+#  un42_start un42_start_1 conta_9_5_f1_3__n un1_conta_1_4 un1_conta_1_3 un8_start_i un42_start_1_i un42_start_i N_59_i N_58_i \
+#  conta_1_i_0__n conta_9_i_1__n conta_9_i_2__n conta_9_i_0__n arriba_i conta_9_i_3__n un12_start_i clk_c reset_c arriba_c \
+#  start_c conta_1DFFRH_0reg conta_1DFFRH_1reg conta_1DFFRH_2reg conta_9DFFRH_0reg conta_9DFFRH_1reg conta_9DFFRH_2reg conta_9DFFRH_3reg un1_conta_1_1_i_2__n un1_conta_1_3_0 \
+#  un1_conta_1_1_i_0__n un1_conta_1_4_0 un1_start_2_i_1__n un1_start_2_i_2__n conta_9_5_f1_0_3__n N_38_i N_41_i N_42_0 N_36_0 N_34_0 \
+#  N_23_i N_15_i N_24_0 conta_1_c_i_1__n un16_start_1_i N_16_0 N_35_i N_37_i N_39_0 un1_start_2_1_1__n \
+#  un1_start_2_2_1__n un8_start_1 un8_start_2 un8_start_3 un1_conta_1_1_1_2__n un1_conta_1_1_1_1__n N_57_1 N_58_1 N_59_1 N_39_0_1 \
+#  N_37_1 conta_9_0_1__un3_n conta_9_0_1__un1_n conta_9_0_1__un0_n conta_9_0_2__un3_n conta_9_0_2__un1_n conta_9_0_2__un0_n conta_9_0_3__un3_n conta_9_0_3__un1_n conta_9_0_3__un0_n \
+#  conta_1_0_0__un3_n conta_1_0_0__un1_n conta_1_0_0__un0_n conta_1_0_1__un3_n conta_1_0_1__un1_n conta_1_0_1__un0_n conta_1_0_2__un3_n conta_1_0_2__un1_n conta_1_0_2__un0_n 
+.model contador
+.inputs clk.BLIF reset.BLIF arriba.BLIF start.BLIF un12_start.BLIF un1_start_2_1__n.BLIF N_22.BLIF N_24.BLIF N_34.BLIF \
+  N_35.BLIF N_36.BLIF N_37.BLIF N_38.BLIF N_39.BLIF N_42.BLIF N_59.BLIF N_58.BLIF N_57.BLIF \
+  un1_conta_1_1_1__n.BLIF un1_conta_1_1_2__n.BLIF conta_9_5_1__n.BLIF conta_9_5_2__n.BLIF conta_9_5_3__n.BLIF un1_start_5.BLIF un1_conta_1_2.BLIF un1_start_4.BLIF N_15.BLIF \
+  N_16.BLIF un1_start_2_2__n.BLIF N_23.BLIF N_41.BLIF un1_conta_1_1_0__n.BLIF un16_start_1.BLIF un8_start.BLIF un42_start.BLIF un42_start_1.BLIF \
+  conta_9_5_f1_3__n.BLIF un1_conta_1_4.BLIF un1_conta_1_3.BLIF un8_start_i.BLIF un42_start_1_i.BLIF un42_start_i.BLIF N_59_i.BLIF N_58_i.BLIF conta_1_i_0__n.BLIF \
+  conta_9_i_1__n.BLIF conta_9_i_2__n.BLIF conta_9_i_0__n.BLIF arriba_i.BLIF conta_9_i_3__n.BLIF un12_start_i.BLIF clk_c.BLIF reset_c.BLIF arriba_c.BLIF \
+  start_c.BLIF conta_1DFFRH_0reg.BLIF conta_1DFFRH_1reg.BLIF conta_1DFFRH_2reg.BLIF conta_9DFFRH_0reg.BLIF conta_9DFFRH_1reg.BLIF conta_9DFFRH_2reg.BLIF conta_9DFFRH_3reg.BLIF un1_conta_1_1_i_2__n.BLIF \
+  un1_conta_1_3_0.BLIF un1_conta_1_1_i_0__n.BLIF un1_conta_1_4_0.BLIF un1_start_2_i_1__n.BLIF un1_start_2_i_2__n.BLIF conta_9_5_f1_0_3__n.BLIF N_38_i.BLIF N_41_i.BLIF N_42_0.BLIF \
+  N_36_0.BLIF N_34_0.BLIF N_23_i.BLIF N_15_i.BLIF N_24_0.BLIF conta_1_c_i_1__n.BLIF un16_start_1_i.BLIF N_16_0.BLIF N_35_i.BLIF \
+  N_37_i.BLIF N_39_0.BLIF un1_start_2_1_1__n.BLIF un1_start_2_2_1__n.BLIF un8_start_1.BLIF un8_start_2.BLIF un8_start_3.BLIF un1_conta_1_1_1_2__n.BLIF un1_conta_1_1_1_1__n.BLIF \
+  N_57_1.BLIF N_58_1.BLIF N_59_1.BLIF N_39_0_1.BLIF N_37_1.BLIF conta_9_0_1__un3_n.BLIF conta_9_0_1__un1_n.BLIF conta_9_0_1__un0_n.BLIF conta_9_0_2__un3_n.BLIF \
+  conta_9_0_2__un1_n.BLIF conta_9_0_2__un0_n.BLIF conta_9_0_3__un3_n.BLIF conta_9_0_3__un1_n.BLIF conta_9_0_3__un0_n.BLIF conta_1_0_0__un3_n.BLIF conta_1_0_0__un1_n.BLIF conta_1_0_0__un0_n.BLIF conta_1_0_1__un3_n.BLIF \
+  conta_1_0_1__un1_n.BLIF conta_1_0_1__un0_n.BLIF conta_1_0_2__un3_n.BLIF conta_1_0_2__un1_n.BLIF conta_1_0_2__un0_n.BLIF  
+.outputs conta_1_2_ conta_9_3_ conta_1_1_ conta_1_0_ conta_9_2_ conta_9_1_ conta_9_0_ conta_9DFFRH_2reg.D conta_9DFFRH_2reg.C conta_9DFFRH_2reg.AR conta_9DFFRH_3reg.D \
+  conta_9DFFRH_3reg.C conta_9DFFRH_3reg.AR conta_1DFFRH_0reg.D conta_1DFFRH_0reg.C conta_1DFFRH_0reg.AR conta_1DFFRH_1reg.D conta_1DFFRH_1reg.C conta_1DFFRH_1reg.AR conta_1DFFRH_2reg.D conta_1DFFRH_2reg.C conta_1DFFRH_2reg.AR \
+  conta_9DFFRH_0reg.D conta_9DFFRH_0reg.C conta_9DFFRH_0reg.AR conta_9DFFRH_1reg.D conta_9DFFRH_1reg.C conta_9DFFRH_1reg.AR un12_start un1_start_2_1__n N_22 N_24 N_34 \
+  N_35 N_36 N_37 N_38 N_39 N_42 N_59 N_58 N_57 un1_conta_1_1_1__n un1_conta_1_1_2__n \
+  conta_9_5_1__n conta_9_5_2__n conta_9_5_3__n un1_start_5 un1_conta_1_2 un1_start_4 N_15 N_16 un1_start_2_2__n N_23 N_41 \
+  un1_conta_1_1_0__n un16_start_1 un8_start un42_start un42_start_1 conta_9_5_f1_3__n un1_conta_1_4 un1_conta_1_3 un8_start_i un42_start_1_i un42_start_i \
+  N_59_i N_58_i conta_1_i_0__n conta_9_i_1__n conta_9_i_2__n conta_9_i_0__n arriba_i conta_9_i_3__n un12_start_i clk_c reset_c \
+  arriba_c start_c un1_conta_1_1_i_2__n un1_conta_1_3_0 un1_conta_1_1_i_0__n un1_conta_1_4_0 un1_start_2_i_1__n un1_start_2_i_2__n conta_9_5_f1_0_3__n N_38_i N_41_i \
+  N_42_0 N_36_0 N_34_0 N_23_i N_15_i N_24_0 conta_1_c_i_1__n un16_start_1_i N_16_0 N_35_i N_37_i \
+  N_39_0 un1_start_2_1_1__n un1_start_2_2_1__n un8_start_1 un8_start_2 un8_start_3 un1_conta_1_1_1_2__n un1_conta_1_1_1_1__n N_57_1 N_58_1 N_59_1 \
+  N_39_0_1 N_37_1 conta_9_0_1__un3_n conta_9_0_1__un1_n conta_9_0_1__un0_n conta_9_0_2__un3_n conta_9_0_2__un1_n conta_9_0_2__un0_n conta_9_0_3__un3_n conta_9_0_3__un1_n conta_9_0_3__un0_n \
+  conta_1_0_0__un3_n conta_1_0_0__un1_n conta_1_0_0__un0_n conta_1_0_1__un3_n conta_1_0_1__un1_n conta_1_0_1__un0_n conta_1_0_2__un3_n conta_1_0_2__un1_n conta_1_0_2__un0_n
+.names  clk.BLIF clk_c
+1 1
+.names  reset.BLIF reset_c
+1 1
+.names  arriba.BLIF arriba_c
+1 1
+.names  start.BLIF start_c
+1 1
+.names  conta_1DFFRH_0reg.BLIF conta_1_0_
+1 1
+.names  conta_1DFFRH_1reg.BLIF conta_1_1_
+1 1
+.names  conta_1DFFRH_2reg.BLIF conta_1_2_
+1 1
+.names  conta_9DFFRH_0reg.BLIF conta_9_0_
+1 1
+.names  conta_9DFFRH_1reg.BLIF conta_9_1_
+1 1
+.names  conta_9DFFRH_2reg.BLIF conta_9_2_
+1 1
+.names  conta_9DFFRH_3reg.BLIF conta_9_3_
+1 1
+.names  un8_start_3.BLIF conta_9_i_1__n.BLIF un8_start
+11 1
+.names  N_24.BLIF conta_1DFFRH_2reg.BLIF un1_conta_1_1_1_2__n
+01 1
+10 1
+.names  un1_conta_1_1_1_2__n.BLIF un1_start_2_1__n.BLIF un1_conta_1_1_2__n
+01 1
+10 1
+.names  N_22.BLIF conta_1DFFRH_1reg.BLIF un1_conta_1_1_1_1__n
+01 1
+10 1
+.names  un1_conta_1_1_1_1__n.BLIF un1_start_2_1__n.BLIF un1_conta_1_1_1__n
+01 1
+10 1
+.names  N_39.BLIF conta_9DFFRH_3reg.BLIF N_57_1
+01 1
+10 1
+.names  N_57_1.BLIF un12_start.BLIF N_57
+01 1
+10 1
+.names  N_42.BLIF conta_9DFFRH_2reg.BLIF N_58_1
+01 1
+10 1
+.names  N_58_1.BLIF un12_start.BLIF N_58
+01 1
+10 1
+.names  conta_9DFFRH_0reg.BLIF conta_9DFFRH_1reg.BLIF N_59_1
+01 1
+10 1
+.names  N_59_1.BLIF un12_start.BLIF N_59
+01 1
+10 1
+.names  N_38_i.BLIF N_35_i.BLIF N_39_0_1
+11 1
+.names  N_39_0_1.BLIF N_37_i.BLIF N_39_0
+11 1
+.names  N_34.BLIF N_36.BLIF N_37_1
+11 1
+.names  N_37_1.BLIF conta_9DFFRH_0reg.BLIF N_37
+11 1
+.names  N_23.BLIF N_23_i
+0 1
+.names  N_15.BLIF N_15_i
+0 1
+.names  N_24_0.BLIF N_24
+0 1
+.names  conta_1DFFRH_1reg.BLIF conta_1_c_i_1__n
+0 1
+.names  un16_start_1.BLIF un16_start_1_i
+0 1
+.names  N_16_0.BLIF N_16
+0 1
+.names  N_35.BLIF N_35_i
+0 1
+.names  N_37.BLIF N_37_i
+0 1
+.names  N_39_0.BLIF N_39
+0 1
+.names  conta_9_i_1__n.BLIF conta_9_i_2__n.BLIF un1_start_2_1_1__n
+11 1
+.names  conta_9_i_3__n.BLIF un16_start_1.BLIF un1_start_2_2_1__n
+11 1
+.names  un1_start_2_1_1__n.BLIF un1_start_2_2_1__n.BLIF un1_start_2_1__n
+11 1
+.names  conta_9_i_2__n.BLIF arriba_c.BLIF un8_start_1
+11 1
+.names  conta_9DFFRH_0reg.BLIF conta_9DFFRH_3reg.BLIF un8_start_2
+11 1
+.names  un8_start_1.BLIF un8_start_2.BLIF un8_start_3
+11 1
+.names  un1_conta_1_1_2__n.BLIF un1_conta_1_1_i_2__n
+0 1
+.names  un1_conta_1_3_0.BLIF un1_conta_1_3
+0 1
+.names  un1_conta_1_1_0__n.BLIF un1_conta_1_1_i_0__n
+0 1
+.names  un1_conta_1_4_0.BLIF un1_conta_1_4
+0 1
+.names  un1_start_2_1__n.BLIF un1_start_2_i_1__n
+0 1
+.names  un1_start_2_i_2__n.BLIF un1_start_2_2__n
+0 1
+.names  conta_9_5_f1_0_3__n.BLIF conta_9_5_f1_3__n
+0 1
+.names  N_38.BLIF N_38_i
+0 1
+.names  N_41.BLIF N_41_i
+0 1
+.names  N_42_0.BLIF N_42
+0 1
+.names  N_36_0.BLIF N_36
+0 1
+.names  N_34_0.BLIF N_34
+0 1
+.names  un1_conta_1_3.BLIF un42_start_i.BLIF un1_start_4
+11 1
+.names  un1_conta_1_1_i_0__n.BLIF un42_start_1_i.BLIF un1_conta_1_4_0
+11 1
+.names  un1_conta_1_1_i_2__n.BLIF un42_start_1_i.BLIF un1_conta_1_3_0
+11 1
+.names  un42_start_1.BLIF un42_start_1_i
+0 1
+.names  un1_conta_1_1_1__n.BLIF un42_start_1_i.BLIF un1_conta_1_2
+11 1
+.names  un8_start.BLIF un8_start_i
+0 1
+.names  arriba_c.BLIF un8_start_i.BLIF un12_start
+11 1
+.names  arriba_i.BLIF conta_9_i_0__n.BLIF un16_start_1
+11 1
+.names  conta_9DFFRH_2reg.BLIF conta_9_i_2__n
+0 1
+.names  conta_9DFFRH_1reg.BLIF conta_9_i_1__n
+0 1
+.names  conta_1DFFRH_0reg.BLIF conta_1_i_0__n
+0 1
+.names  conta_1_i_0__n.BLIF un42_start_1.BLIF un42_start
+11 1
+.names  conta_1DFFRH_1reg.BLIF conta_1DFFRH_2reg.BLIF un42_start_1
+11 1
+.names  conta_9_5_f1_3__n.BLIF un8_start_i.BLIF conta_9_5_3__n
+11 1
+.names  N_57.BLIF un1_start_2_i_1__n.BLIF conta_9_5_f1_0_3__n
+11 1
+.names  un1_start_2_i_1__n.BLIF un8_start_i.BLIF un1_start_2_i_2__n
+11 1
+.names  N_58.BLIF N_58_i
+0 1
+.names  N_58_i.BLIF un1_start_2_i_2__n.BLIF conta_9_5_2__n
+11 1
+.names  N_59.BLIF N_59_i
+0 1
+.names  N_59_i.BLIF un1_start_2_i_2__n.BLIF conta_9_5_1__n
+11 1
+.names  un1_conta_1_4.BLIF un42_start_i.BLIF un1_start_5
+11 1
+.names  un42_start.BLIF un42_start_i
+0 1
+.names  conta_1_c_i_1__n.BLIF un16_start_1_i.BLIF N_16_0
+11 1
+.names  conta_1DFFRH_0reg.BLIF un1_start_2_2__n.BLIF N_22
+11 1
+.names  N_16.BLIF N_22.BLIF N_23
+11 1
+.names  N_15_i.BLIF N_23_i.BLIF N_24_0
+11 1
+.names  conta_9DFFRH_1reg.BLIF un12_start_i.BLIF N_38
+11 1
+.names  conta_9_i_1__n.BLIF un12_start.BLIF N_34_0
+11 1
+.names  conta_9DFFRH_2reg.BLIF un12_start_i.BLIF N_35
+11 1
+.names  un12_start.BLIF un12_start_i
+0 1
+.names  conta_9_i_2__n.BLIF un12_start.BLIF N_36_0
+11 1
+.names  N_34.BLIF conta_9DFFRH_0reg.BLIF N_41
+11 1
+.names  N_38_i.BLIF N_41_i.BLIF N_42_0
+11 1
+.names  conta_1DFFRH_0reg.BLIF un1_start_2_2__n.BLIF un1_conta_1_1_0__n
+01 1
+10 1
+.names  conta_9DFFRH_3reg.BLIF conta_9_i_3__n
+0 1
+.names  conta_9DFFRH_0reg.BLIF conta_9_i_0__n
+0 1
+.names  arriba_c.BLIF arriba_i
+0 1
+.names  conta_9DFFRH_0reg.BLIF start_c.BLIF conta_9DFFRH_0reg.D
+01 1
+10 1
+.names  start_c.BLIF conta_9_0_1__un3_n
+0 1
+.names  conta_9_5_1__n.BLIF start_c.BLIF conta_9_0_1__un1_n
+11 1
+.names  conta_9DFFRH_1reg.BLIF conta_9_0_1__un3_n.BLIF conta_9_0_1__un0_n
+11 1
+.names  conta_9_0_1__un1_n.BLIF conta_9_0_1__un0_n.BLIF conta_9DFFRH_1reg.D
+1- 1
+-1 1
+.names  start_c.BLIF conta_9_0_2__un3_n
+0 1
+.names  conta_9_5_2__n.BLIF start_c.BLIF conta_9_0_2__un1_n
+11 1
+.names  conta_9DFFRH_2reg.BLIF conta_9_0_2__un3_n.BLIF conta_9_0_2__un0_n
+11 1
+.names  conta_9_0_2__un1_n.BLIF conta_9_0_2__un0_n.BLIF conta_9DFFRH_2reg.D
+1- 1
+-1 1
+.names  start_c.BLIF conta_9_0_3__un3_n
+0 1
+.names  conta_9_5_3__n.BLIF start_c.BLIF conta_9_0_3__un1_n
+11 1
+.names  conta_9DFFRH_3reg.BLIF conta_9_0_3__un3_n.BLIF conta_9_0_3__un0_n
+11 1
+.names  conta_9_0_3__un1_n.BLIF conta_9_0_3__un0_n.BLIF conta_9DFFRH_3reg.D
+1- 1
+-1 1
+.names  start_c.BLIF conta_1_0_0__un3_n
+0 1
+.names  un1_start_5.BLIF start_c.BLIF conta_1_0_0__un1_n
+11 1
+.names  conta_1DFFRH_0reg.BLIF conta_1_0_0__un3_n.BLIF conta_1_0_0__un0_n
+11 1
+.names  conta_1_0_0__un1_n.BLIF conta_1_0_0__un0_n.BLIF conta_1DFFRH_0reg.D
+1- 1
+-1 1
+.names  start_c.BLIF conta_1_0_1__un3_n
+0 1
+.names  un1_conta_1_2.BLIF start_c.BLIF conta_1_0_1__un1_n
+11 1
+.names  conta_1DFFRH_1reg.BLIF conta_1_0_1__un3_n.BLIF conta_1_0_1__un0_n
+11 1
+.names  conta_1_0_1__un1_n.BLIF conta_1_0_1__un0_n.BLIF conta_1DFFRH_1reg.D
+1- 1
+-1 1
+.names  start_c.BLIF conta_1_0_2__un3_n
+0 1
+.names  un1_start_4.BLIF start_c.BLIF conta_1_0_2__un1_n
+11 1
+.names  conta_1DFFRH_2reg.BLIF conta_1_0_2__un3_n.BLIF conta_1_0_2__un0_n
+11 1
+.names  conta_1_0_2__un1_n.BLIF conta_1_0_2__un0_n.BLIF conta_1DFFRH_2reg.D
+1- 1
+-1 1
+.names  conta_1DFFRH_1reg.BLIF un1_start_2_1__n.BLIF N_15
+11 1
+.names  clk_c.BLIF conta_9DFFRH_2reg.C
+1 1
+.names  reset_c.BLIF conta_9DFFRH_2reg.AR
+1 1
+.names  clk_c.BLIF conta_9DFFRH_3reg.C
+1 1
+.names  reset_c.BLIF conta_9DFFRH_3reg.AR
+1 1
+.names  clk_c.BLIF conta_1DFFRH_0reg.C
+1 1
+.names  reset_c.BLIF conta_1DFFRH_0reg.AR
+1 1
+.names  clk_c.BLIF conta_1DFFRH_1reg.C
+1 1
+.names  reset_c.BLIF conta_1DFFRH_1reg.AR
+1 1
+.names  clk_c.BLIF conta_1DFFRH_2reg.C
+1 1
+.names  reset_c.BLIF conta_1DFFRH_2reg.AR
+1 1
+.names  clk_c.BLIF conta_9DFFRH_0reg.C
+1 1
+.names  reset_c.BLIF conta_9DFFRH_0reg.AR
+1 1
+.names  clk_c.BLIF conta_9DFFRH_1reg.C
+1 1
+.names  reset_c.BLIF conta_9DFFRH_1reg.AR
+1 1
+.end

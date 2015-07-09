@@ -1,0 +1,4 @@
+@E: CD371 :"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":43:14:43:22|No matching overload for "+"
+@E: CD371 :"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":45:13:45:21|No matching overload for "-"
+@E: CD308 :"C:\users\andres\documents\respaldo\proyecto\contador\main_contador.vhd":43:14:43:22|Unable to evaluate expression type
+

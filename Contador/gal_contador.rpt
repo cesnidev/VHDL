@@ -1,0 +1,262 @@
+
+
+                                                                      Page 1
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Jul 08 20:17:13 2015
+
+
+
+--------------------------------------------------------------------------------
+
+Module                   : 'contador'
+
+--------------------------------------------------------------------------------
+
+Input files:
+
+    ABEL PLA file        : gal_contador.tt3
+    Device library       : P22V10G.dev
+
+Output files:
+
+    Report file          : gal_contador.rpt
+    Programmer load file : gal_contador.jed
+
+--------------------------------------------------------------------------------
+
+
+                                                                      Page 2
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Jul 08 20:17:13 2015
+
+P22V10G Programmed Logic:
+--------------------------------------------------------------------------------
+
+
+
+conta_9_2_.D   = (  !start & conta_9_2_.Q 
+                  #   !arriba & !un1_start_2_1__n & !un8_start & conta_9_0_.Q 
+                    & conta_9_2_.Q 
+                  #   !un1_start_2_1__n & !un8_start & !conta_9_0_.Q 
+                    & conta_9_1_.Q & conta_9_2_.Q 
+                  #   arriba & !un1_start_2_1__n & !un8_start & !conta_9_1_.Q 
+                    & conta_9_2_.Q 
+                  #   arriba & start & !un1_start_2_1__n & !un8_start 
+                    & conta_9_0_.Q & conta_9_1_.Q & !conta_9_2_.Q 
+                  #   !arriba & start & !un1_start_2_1__n & !un8_start 
+                    & !conta_9_0_.Q & !conta_9_1_.Q & !conta_9_2_.Q ); " ISTYPE 'BUFFER'
+conta_9_2_.C   = (  clk );
+conta_9_2_.AR  = (  reset );
+
+conta_9_3_.D   = (  start & un1_start_2_1__n & !un8_start 
+                  #   !start & conta_9_3_.Q 
+                  #   !un8_start & !conta_9_0_.Q & conta_9_1_.Q & conta_9_3_.Q 
+                  #   arriba & !un8_start & !conta_9_1_.Q & conta_9_3_.Q 
+                  #   !arriba & !un8_start & conta_9_2_.Q & conta_9_3_.Q 
+                  #   !un8_start & conta_9_0_.Q & !conta_9_2_.Q & conta_9_3_.Q 
+                  #   arriba & start & !un8_start & conta_9_0_.Q & conta_9_1_.Q 
+                    & conta_9_2_.Q & !conta_9_3_.Q 
+                  #   !arriba & start & !un8_start & !conta_9_0_.Q 
+                    & !conta_9_1_.Q & !conta_9_2_.Q & !conta_9_3_.Q ); " ISTYPE 'BUFFER'
+conta_9_3_.C   = (  clk );
+conta_9_3_.AR  = (  reset );
+
+conta_1_0_.D   = (  !start & conta_1_0_.Q 
+                  #   !un1_start_2_1__n & !un8_start & conta_1_0_.Q 
+                  #   start & un1_start_2_1__n & !conta_1_0_.Q & !conta_1_1_.Q 
+                  #   start & un8_start & !conta_1_0_.Q & !conta_1_1_.Q 
+                  #   conta_1_0_.Q & conta_1_1_.Q & conta_1_2_.Q 
+                  #   start & un1_start_2_1__n & !conta_1_0_.Q & !conta_1_2_.Q 
+                  #   start & un8_start & !conta_1_0_.Q & !conta_1_2_.Q );
+                " ISTYPE 'BUFFER'
+conta_1_0_.C   = (  clk );
+conta_1_0_.AR  = (  reset );
+
+conta_1_1_.D   = (  !start & conta_1_1_.Q 
+                  #   start & !un1_start_2_1__n & un8_start & conta_1_0_.Q 
+                    & !conta_1_1_.Q 
+                  #   start & un1_start_2_1__n & !conta_1_0_.Q & !conta_1_1_.Q 
+                  #   !un1_start_2_1__n & !un8_start & conta_1_1_.Q 
+                    & !conta_1_2_.Q 
+                  #   un1_start_2_1__n & conta_1_0_.Q & conta_1_1_.Q 
+                    & !conta_1_2_.Q 
+                  #   !un1_start_2_1__n & !conta_1_0_.Q & conta_1_1_.Q 
+                    & !conta_1_2_.Q ); " ISTYPE 'BUFFER'
+conta_1_1_.C   = (  clk );
+conta_1_1_.AR  = (  reset );
+
+conta_1_2_.D   = (  !start & conta_1_2_.Q 
+
+
+                                                                      Page 3
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Jul 08 20:17:13 2015
+
+P22V10G Programmed Logic:
+--------------------------------------------------------------------------------
+
+
+
+                  #   conta_1_0_.Q & conta_1_1_.Q & conta_1_2_.Q 
+                  #   un1_start_2_1__n & N_23 & !conta_1_1_.Q & conta_1_2_.Q 
+                  #   !un1_start_2_1__n & !N_23 & !conta_1_1_.Q & conta_1_2_.Q 
+                  #   start & !un1_start_2_1__n & N_23 & !conta_1_2_.Q 
+                  #   start & un1_start_2_1__n & !N_23 & !conta_1_1_.Q 
+                    & !conta_1_2_.Q ); " ISTYPE 'BUFFER'
+conta_1_2_.C   = (  clk );
+conta_1_2_.AR  = (  reset );
+
+conta_9_0_.D   = (  !start & conta_9_0_.Q 
+                  #   start & !conta_9_0_.Q ); " ISTYPE 'BUFFER'
+conta_9_0_.C   = (  clk );
+conta_9_0_.AR  = (  reset );
+
+conta_9_1_.D   = (  !start & conta_9_1_.Q 
+                  #   !arriba & !un1_start_2_1__n & !un8_start & conta_9_0_.Q 
+                    & conta_9_1_.Q 
+                  #   arriba & !un1_start_2_1__n & !un8_start & !conta_9_0_.Q 
+                    & conta_9_1_.Q 
+                  #   arriba & start & !un1_start_2_1__n & !un8_start 
+                    & conta_9_0_.Q & !conta_9_1_.Q 
+                  #   !arriba & start & !un1_start_2_1__n & !un8_start 
+                    & !conta_9_0_.Q & !conta_9_1_.Q ); " ISTYPE 'BUFFER'
+conta_9_1_.C   = (  clk );
+conta_9_1_.AR  = (  reset );
+
+un1_start_2_1__n     = (  !arriba & !conta_9_0_.Q & !conta_9_1_.Q 
+                          & !conta_9_2_.Q & !conta_9_3_.Q );
+
+N_23     = (  un1_start_2_1__n & conta_1_0_.Q & conta_1_1_.Q 
+            #   un8_start & conta_1_0_.Q & conta_1_1_.Q 
+            #   !arriba & un1_start_2_1__n & conta_1_0_.Q & !conta_9_0_.Q 
+            #   !arriba & un8_start & conta_1_0_.Q & !conta_9_0_.Q );
+
+un8_start     = (  arriba & conta_9_0_.Q & !conta_9_1_.Q & !conta_9_2_.Q 
+                   & conta_9_3_.Q );
+
+
+
+                                                                      Page 4
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Jul 08 20:17:13 2015
+
+P22V10G Chip Diagram:
+--------------------------------------------------------------------------------
+
+
+
+
+                                   P22V10G
+
+                         +---------\       /---------+
+                         |          \     /          |
+                         |           -----           |
+                     clk |  1                    24  | Vcc                     
+                         |                           |
+                   reset |  2                    23  | conta_1_2_              
+                         |                           |
+                  arriba |  3                    22  | conta_1_1_              
+                         |                           |
+                   start |  4                    21  | conta_1_0_              
+                         |                           |
+                         |  5                    20  | conta_9_3_              
+                         |                           |
+                         |  6                    19  | conta_9_2_              
+                         |                           |
+                         |  7                    18  | conta_9_1_              
+                         |                           |
+                         |  8                    17  | conta_9_0_              
+                         |                           |
+                         |  9                    16  | un1_start_2_1__n        
+                         |                           |
+                         | 10                    15  | N_23                    
+                         |                           |
+                         | 11                    14  | un8_start               
+                         |                           |
+                     GND | 12                    13  |                         
+                         |                           |
+                         |                           |
+                         `---------------------------'
+
+                        SIGNATURE: N/A
+
+
+                                                                      Page 5
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Jul 08 20:17:13 2015
+
+P22V10G Resource Allocations:
+--------------------------------------------------------------------------------
+
+
+
+        Device        | Resource  |   Design    |
+       Resources      | Available | Requirement | Unused
+======================|===========|=============|==============
+                      |           |             |
+Input Pins:           |           |             |
+                      |           |             |
+          Input:      |     12    |      4      |    8 ( 66 %)
+                      |           |             |
+Output Pins:          |           |             |
+                      |           |             |
+          In/Out:     |     10    |     10      |    0 (  0 %)
+          Output:     |      -    |      -      |    -
+                      |           |             |
+Buried Nodes:         |           |             |
+                      |           |             |
+          Input Reg:  |      -    |      -      |    -
+          Pin Reg:    |     10    |      7      |    3 ( 30 %)
+          Buried Reg: |      -    |      -      |    -
+
+
+                                                                      Page 6
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Jul 08 20:17:13 2015
+
+P22V10G Product Terms Distribution:
+--------------------------------------------------------------------------------
+
+
+
+            Signal                       |    Pin   | Terms | Terms | Terms
+             Name                        | Assigned | Used  |  Max  | Unused
+=========================================|==========|=======|=======|=======
+conta_9_2_.D                             |   19     |   6   |  16   |  10
+conta_9_3_.D                             |   20     |   8   |  14   |   6
+conta_1_0_.D                             |   21     |   7   |  12   |   5
+conta_1_1_.D                             |   22     |   6   |  10   |   4
+conta_1_2_.D                             |   23     |   6   |   8   |   2
+conta_9_0_.D                             |   17     |   2   |  14   |  12
+conta_9_1_.D                             |   18     |   5   |  16   |  11
+un1_start_2_1__n                         |   16     |   1   |  12   |  11
+N_23                                     |   15     |   4   |  10   |   6
+un8_start                                |   14     |   1   |   8   |   7
+
+
+     ==== List of Inputs/Feedbacks ====
+
+Signal Name                              | Pin      | Pin Type
+=========================================|==========|=========
+clk                                      |    1     | CLK/IN
+reset                                    |    2     | INPUT
+arriba                                   |    3     | INPUT
+start                                    |    4     | INPUT
+un1_start_2_1__n                         |   16     | BIDIR
+N_23                                     |   15     | BIDIR
+un8_start                                |   14     | BIDIR
+
+
+                                                                      Page 7
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Wed Jul 08 20:17:13 2015
+
+P22V10G Unused Resources:
+--------------------------------------------------------------------------------
+
+
+
+ Pin   |  Pin   |   Product   | Flip-flop
+Number |  Type  |   Terms     |   Type
+=======|========|=============|==========
+    5  |  INPUT |      -      |    -   
+    6  |  INPUT |      -      |    -   
+    7  |  INPUT |      -      |    -   
+    8  |  INPUT |      -      |    -   
+    9  |  INPUT |      -      |    -   
+   10  |  INPUT |      -      |    -   
+   11  |  INPUT |      -      |    -   
+   13  |  INPUT |      -      |    -   

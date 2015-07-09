@@ -1,0 +1,4 @@
+@E: CD541 :"C:\users\andres\desktop\gal_09\main.vhd":9:2:9:4|Expecting ;
+@E: CD541 :"C:\users\andres\desktop\gal_09\main.vhd":11:2:11:5|Expecting ;
+@E|Parse errors encountered - exiting
+

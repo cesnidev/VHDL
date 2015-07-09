@@ -1,0 +1,11 @@
+JDF B
+// Created by Version 2.0 
+PROJECT GAL_DIG
+DESIGN gal_dig Normal
+DEVKIT GAL22V10D-10LP
+ENTRY Pure VHDL
+MODULE main.vhd
+MODSTYLE decodificador Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE decodificador

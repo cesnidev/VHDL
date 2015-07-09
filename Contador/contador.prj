@@ -1,0 +1,33 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file c:/users/andres/documents/respaldo/proyecto/contador\contador.prj
+#-- Written on Wed Jul 08 20:24:45 2015
+
+
+#device options
+set_option -technology ispGAL
+
+#compilation/mapping options
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "main_contador.vhd"
+
+#-- top module name
+set_option -top_module contador
+
+#-- set result format/file last
+project -result_file "contador.edi"
+
+#-- error message log file
+project -log_file contador.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

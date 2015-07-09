@@ -1,0 +1,260 @@
+#$ DATE Sun Jun 28 23:36:26 2015
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE decodificador
+#$ PINS 17 digout_2_:19'ke'  digout_1_:18'ke'  diga_2_:1'ke'  digout_0_:17'ke'  digb_3_:4'ke'  digout_6_:23'ke'  clk:10'ke'  digo digt diga_1_:2'ke'  diga_0_:3'ke'  digb_2_:5'ke'  digb_1_:6'ke'  digb_0_:7'ke'  digout_5_:22'ke'  digout_4_:21'ke'  digout_3_:20'ke' 
+#$ NODES 101 N_11 N_15 N_25 N_30 N_31 N_32 N_33 N_34 N_35 N_36 \
+#  N_37 N_38 N_39 N_40 N_41 N_42 N_43 N_44 N_45 N_46 \
+#  N_49 N_51 N_52 N_54 N_60 N_70 N_71 N_77 N_78 clk_i \
+#  digb_i_1__n digb_i_3__n digb_i_2__n digb_i_0__n diga_i_2__n diga_i_1__n diga_i_0__n diga_c_0__n diga_c_1__n diga_c_2__n \
+#  clk_c digb_c_0__n digb_c_1__n digb_c_2__n digb_c_3__n digout_c_0__n digout_c_1__n digout_c_2__n digout_c_3__n digout_c_4__n \
+#  digout_c_5__n digout_c_6__n N_25_0 N_51_i N_17_0 N_49_i N_71_i N_15_0 N_46_i N_78_i \
+#  N_14_0 N_38_i N_42_i N_13_0 N_11_0 N_43_i N_44_i N_10_i N_37_i digout_c_0_0__n \
+#  N_32_i N_41_i digout_c_0_1__n N_40_i digout_c_0_2__n N_39_i digout_c_0_3__n N_35_i N_36_i N_52_i \
+#  digout_c_0_4__n N_31_i N_33_i N_34_i N_54_i digout_c_0_5__n N_30_i N_60_i digout_c_0_6__n digout_c_0_1_0__n \
+#  digout_c_0_1_1__n digout_c_0_2_1__n digout_c_0_1_3__n digout_c_0_2_3__n digout_c_0_1_4__n digout_c_0_2_4__n digout_c_0_1_5__n digout_c_0_2_5__n digout_c_0_3_5__n digout_c_0_1_6__n \
+#  digout_c_0_2_6__n 
+.model decodificador
+.inputs diga_2_.BLIF digb_3_.BLIF clk.BLIF diga_1_.BLIF diga_0_.BLIF digb_2_.BLIF digb_1_.BLIF digb_0_.BLIF N_11.BLIF \
+  N_15.BLIF N_25.BLIF N_30.BLIF N_31.BLIF N_32.BLIF N_33.BLIF N_34.BLIF N_35.BLIF N_36.BLIF \
+  N_37.BLIF N_38.BLIF N_39.BLIF N_40.BLIF N_41.BLIF N_42.BLIF N_43.BLIF N_44.BLIF N_45.BLIF \
+  N_46.BLIF N_49.BLIF N_51.BLIF N_52.BLIF N_54.BLIF N_60.BLIF N_70.BLIF N_71.BLIF N_77.BLIF \
+  N_78.BLIF clk_i.BLIF digb_i_1__n.BLIF digb_i_3__n.BLIF digb_i_2__n.BLIF digb_i_0__n.BLIF diga_i_2__n.BLIF diga_i_1__n.BLIF diga_i_0__n.BLIF \
+  diga_c_0__n.BLIF diga_c_1__n.BLIF diga_c_2__n.BLIF clk_c.BLIF digb_c_0__n.BLIF digb_c_1__n.BLIF digb_c_2__n.BLIF digb_c_3__n.BLIF digout_c_0__n.BLIF \
+  digout_c_1__n.BLIF digout_c_2__n.BLIF digout_c_3__n.BLIF digout_c_4__n.BLIF digout_c_5__n.BLIF digout_c_6__n.BLIF N_25_0.BLIF N_51_i.BLIF N_17_0.BLIF \
+  N_49_i.BLIF N_71_i.BLIF N_15_0.BLIF N_46_i.BLIF N_78_i.BLIF N_14_0.BLIF N_38_i.BLIF N_42_i.BLIF N_13_0.BLIF \
+  N_11_0.BLIF N_43_i.BLIF N_44_i.BLIF N_10_i.BLIF N_37_i.BLIF digout_c_0_0__n.BLIF N_32_i.BLIF N_41_i.BLIF digout_c_0_1__n.BLIF \
+  N_40_i.BLIF digout_c_0_2__n.BLIF N_39_i.BLIF digout_c_0_3__n.BLIF N_35_i.BLIF N_36_i.BLIF N_52_i.BLIF digout_c_0_4__n.BLIF N_31_i.BLIF \
+  N_33_i.BLIF N_34_i.BLIF N_54_i.BLIF digout_c_0_5__n.BLIF N_30_i.BLIF N_60_i.BLIF digout_c_0_6__n.BLIF digout_c_0_1_0__n.BLIF digout_c_0_1_1__n.BLIF \
+  digout_c_0_2_1__n.BLIF digout_c_0_1_3__n.BLIF digout_c_0_2_3__n.BLIF digout_c_0_1_4__n.BLIF digout_c_0_2_4__n.BLIF digout_c_0_1_5__n.BLIF digout_c_0_2_5__n.BLIF digout_c_0_3_5__n.BLIF digout_c_0_1_6__n.BLIF \
+  digout_c_0_2_6__n.BLIF  
+.outputs digout_6_ digo digt digout_5_ digout_4_ digout_3_ digout_2_ digout_1_ digout_0_ N_11 N_15 \
+  N_25 N_30 N_31 N_32 N_33 N_34 N_35 N_36 N_37 N_38 N_39 \
+  N_40 N_41 N_42 N_43 N_44 N_45 N_46 N_49 N_51 N_52 N_54 \
+  N_60 N_70 N_71 N_77 N_78 clk_i digb_i_1__n digb_i_3__n digb_i_2__n digb_i_0__n diga_i_2__n \
+  diga_i_1__n diga_i_0__n diga_c_0__n diga_c_1__n diga_c_2__n clk_c digb_c_0__n digb_c_1__n digb_c_2__n digb_c_3__n digout_c_0__n \
+  digout_c_1__n digout_c_2__n digout_c_3__n digout_c_4__n digout_c_5__n digout_c_6__n N_25_0 N_51_i N_17_0 N_49_i N_71_i \
+  N_15_0 N_46_i N_78_i N_14_0 N_38_i N_42_i N_13_0 N_11_0 N_43_i N_44_i N_10_i \
+  N_37_i digout_c_0_0__n N_32_i N_41_i digout_c_0_1__n N_40_i digout_c_0_2__n N_39_i digout_c_0_3__n N_35_i N_36_i \
+  N_52_i digout_c_0_4__n N_31_i N_33_i N_34_i N_54_i digout_c_0_5__n N_30_i N_60_i digout_c_0_6__n digout_c_0_1_0__n \
+  digout_c_0_1_1__n digout_c_0_2_1__n digout_c_0_1_3__n digout_c_0_2_3__n digout_c_0_1_4__n digout_c_0_2_4__n digout_c_0_1_5__n digout_c_0_2_5__n digout_c_0_3_5__n digout_c_0_1_6__n digout_c_0_2_6__n
+.names  diga_0_.BLIF diga_c_0__n
+1 1
+.names  diga_1_.BLIF diga_c_1__n
+1 1
+.names  diga_2_.BLIF diga_c_2__n
+1 1
+.names  clk.BLIF clk_c
+1 1
+.names  digb_0_.BLIF digb_c_0__n
+1 1
+.names  digb_1_.BLIF digb_c_1__n
+1 1
+.names  digb_2_.BLIF digb_c_2__n
+1 1
+.names  digb_3_.BLIF digb_c_3__n
+1 1
+.names  clk_i.BLIF digo
+1 1
+.names  clk_c.BLIF digt
+1 1
+.names  digout_c_0__n.BLIF digout_0_
+1 1
+.names  digout_c_1__n.BLIF digout_1_
+1 1
+.names  digout_c_2__n.BLIF digout_2_
+1 1
+.names  digout_c_3__n.BLIF digout_3_
+1 1
+.names  digout_c_4__n.BLIF digout_4_
+1 1
+.names  digout_c_5__n.BLIF digout_5_
+1 1
+.names  digout_c_6__n.BLIF digout_6_
+1 1
+.names  digout_c_0_1_5__n.BLIF digout_c_0_2_5__n.BLIF digout_c_0_3_5__n
+11 1
+.names  digout_c_0_3_5__n.BLIF N_34_i.BLIF digout_c_0_5__n
+11 1
+.names  N_13_0.BLIF N_17_0.BLIF digout_c_0_1_6__n
+11 1
+.names  N_30_i.BLIF N_60_i.BLIF digout_c_0_2_6__n
+11 1
+.names  digout_c_0_1_6__n.BLIF digout_c_0_2_6__n.BLIF digout_c_0_6__n
+11 1
+.names  N_60.BLIF N_60_i
+0 1
+.names  digout_c_0_6__n.BLIF digout_c_6__n
+0 1
+.names  N_37_i.BLIF N_13_0.BLIF digout_c_0_1_0__n
+11 1
+.names  digout_c_0_1_0__n.BLIF N_14_0.BLIF digout_c_0_0__n
+11 1
+.names  N_14_0.BLIF N_32_i.BLIF digout_c_0_1_1__n
+11 1
+.names  N_41_i.BLIF N_42_i.BLIF digout_c_0_2_1__n
+11 1
+.names  digout_c_0_1_1__n.BLIF digout_c_0_2_1__n.BLIF digout_c_0_1__n
+11 1
+.names  N_17_0.BLIF N_37_i.BLIF digout_c_0_1_3__n
+11 1
+.names  N_38_i.BLIF N_39_i.BLIF digout_c_0_2_3__n
+11 1
+.names  digout_c_0_1_3__n.BLIF digout_c_0_2_3__n.BLIF digout_c_0_3__n
+11 1
+.names  N_15_0.BLIF N_35_i.BLIF digout_c_0_1_4__n
+11 1
+.names  N_36_i.BLIF N_52_i.BLIF digout_c_0_2_4__n
+11 1
+.names  digout_c_0_1_4__n.BLIF digout_c_0_2_4__n.BLIF digout_c_0_4__n
+11 1
+.names  N_54_i.BLIF N_31_i.BLIF digout_c_0_1_5__n
+11 1
+.names  N_32_i.BLIF N_33_i.BLIF digout_c_0_2_5__n
+11 1
+.names  digout_c_0_1__n.BLIF digout_c_1__n
+0 1
+.names  N_40.BLIF N_40_i
+0 1
+.names  digout_c_0_2__n.BLIF digout_c_2__n
+0 1
+.names  N_39.BLIF N_39_i
+0 1
+.names  digout_c_0_3__n.BLIF digout_c_3__n
+0 1
+.names  N_35.BLIF N_35_i
+0 1
+.names  N_36.BLIF N_36_i
+0 1
+.names  N_52.BLIF N_52_i
+0 1
+.names  digout_c_0_4__n.BLIF digout_c_4__n
+0 1
+.names  N_31.BLIF N_31_i
+0 1
+.names  N_33.BLIF N_33_i
+0 1
+.names  N_34.BLIF N_34_i
+0 1
+.names  N_54.BLIF N_54_i
+0 1
+.names  digout_c_0_5__n.BLIF digout_c_5__n
+0 1
+.names  N_30.BLIF N_30_i
+0 1
+.names  N_51.BLIF N_51_i
+0 1
+.names  N_49.BLIF N_49_i
+0 1
+.names  N_71.BLIF N_71_i
+0 1
+.names  N_15_0.BLIF N_15
+0 1
+.names  N_46.BLIF N_46_i
+0 1
+.names  N_78.BLIF N_78_i
+0 1
+.names  N_38.BLIF N_38_i
+0 1
+.names  N_42.BLIF N_42_i
+0 1
+.names  N_11_0.BLIF N_11
+0 1
+.names  N_43.BLIF N_43_i
+0 1
+.names  N_44.BLIF N_44_i
+0 1
+.names  N_37.BLIF N_37_i
+0 1
+.names  digout_c_0_0__n.BLIF digout_c_0__n
+0 1
+.names  N_32.BLIF N_32_i
+0 1
+.names  N_41.BLIF N_41_i
+0 1
+.names  N_25_0.BLIF N_25
+0 1
+.names  N_43_i.BLIF N_44_i.BLIF N_10_i
+11 1
+.names  digb_c_2__n.BLIF digb_i_2__n
+0 1
+.names  digb_c_0__n.BLIF digb_i_0__n
+0 1
+.names  digb_c_0__n.BLIF digb_c_2__n.BLIF N_11_0
+11 1
+.names  N_38_i.BLIF N_42_i.BLIF N_13_0
+11 1
+.names  N_46_i.BLIF N_78_i.BLIF N_14_0
+11 1
+.names  N_49_i.BLIF N_71_i.BLIF N_15_0
+11 1
+.names  N_10_i.BLIF N_51_i.BLIF N_17_0
+11 1
+.names  digb_c_1__n.BLIF digb_i_1__n
+0 1
+.names  digb_c_3__n.BLIF digb_i_3__n
+0 1
+.names  digb_c_1__n.BLIF digb_c_3__n.BLIF N_25_0
+11 1
+.names  clk_c.BLIF clk_i
+0 1
+.names  N_54.BLIF diga_i_0__n.BLIF N_44
+11 1
+.names  clk_i.BLIF digb_i_3__n.BLIF N_45
+11 1
+.names  N_77.BLIF digb_c_2__n.BLIF N_46
+11 1
+.names  N_45.BLIF digb_c_2__n.BLIF N_49
+11 1
+.names  N_78.BLIF diga_c_0__n.BLIF N_51
+11 1
+.names  diga_c_1__n.BLIF diga_i_1__n
+0 1
+.names  clk_c.BLIF diga_i_1__n.BLIF N_52
+11 1
+.names  diga_c_2__n.BLIF diga_i_2__n
+0 1
+.names  clk_c.BLIF diga_i_2__n.BLIF N_54
+11 1
+.names  N_45.BLIF digb_c_1__n.BLIF N_60
+11 1
+.names  clk_i.BLIF digb_i_2__n.BLIF N_70
+11 1
+.names  N_70.BLIF digb_i_1__n.BLIF N_71
+11 1
+.names  N_45.BLIF digb_i_1__n.BLIF N_77
+11 1
+.names  N_52.BLIF diga_c_2__n.BLIF N_78
+11 1
+.names  N_10_i.BLIF N_40_i.BLIF digout_c_0_2__n
+11 1
+.names  N_11_0.BLIF N_45.BLIF N_30
+11 1
+.names  N_25.BLIF N_70.BLIF N_31
+11 1
+.names  N_52.BLIF diga_i_0__n.BLIF N_32
+11 1
+.names  N_77.BLIF digb_i_0__n.BLIF N_33
+11 1
+.names  N_60.BLIF digb_c_0__n.BLIF N_34
+11 1
+.names  N_54.BLIF diga_c_0__n.BLIF N_35
+11 1
+.names  N_45.BLIF digb_c_0__n.BLIF N_36
+11 1
+.names  N_11.BLIF N_60.BLIF N_37
+11 1
+.names  N_54.BLIF diga_c_1__n.BLIF N_38
+11 1
+.names  N_11_0.BLIF N_77.BLIF N_39
+11 1
+.names  N_60.BLIF digb_i_0__n.BLIF N_40
+11 1
+.names  N_15.BLIF digb_i_0__n.BLIF N_41
+11 1
+.names  N_71.BLIF digb_c_3__n.BLIF N_42
+11 1
+.names  N_71.BLIF digb_i_0__n.BLIF N_43
+11 1
+.names  diga_c_0__n.BLIF diga_i_0__n
+0 1
+.end

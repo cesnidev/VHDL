@@ -1,0 +1,10 @@
+@W: CD638 :"C:\users\andres\desktop\gal_09\main.vhd":22:7:22:10|Signal diga is undriven 
+@W: CD638 :"C:\users\andres\desktop\gal_09\main.vhd":23:7:23:10|Signal digb is undriven 
+@W: CL252 :"C:\users\andres\desktop\gal_09\main.vhd":23:7:23:10|Bit 0 of signal digb is floating -- simulation mismatch possible.
+@W: CL252 :"C:\users\andres\desktop\gal_09\main.vhd":23:7:23:10|Bit 1 of signal digb is floating -- simulation mismatch possible.
+@W: CL252 :"C:\users\andres\desktop\gal_09\main.vhd":23:7:23:10|Bit 2 of signal digb is floating -- simulation mismatch possible.
+@W: CL252 :"C:\users\andres\desktop\gal_09\main.vhd":23:7:23:10|Bit 3 of signal digb is floating -- simulation mismatch possible.
+@W: CL252 :"C:\users\andres\desktop\gal_09\main.vhd":22:7:22:10|Bit 0 of signal diga is floating -- simulation mismatch possible.
+@W: CL252 :"C:\users\andres\desktop\gal_09\main.vhd":22:7:22:10|Bit 1 of signal diga is floating -- simulation mismatch possible.
+@W: CL252 :"C:\users\andres\desktop\gal_09\main.vhd":22:7:22:10|Bit 2 of signal diga is floating -- simulation mismatch possible.
+
